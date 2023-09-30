@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: darkgoldenrod;
+  text-align: center;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.horizontal,
+.vertical {
+  display: none;
+  width: 125px;
+  height: 25px;
+  font-size: 16px;
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+  background-color: darkgoldenrod;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.active {
+  display: block;
+}
+
+.grid {
+  width: 300px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 1px;
+  background-color: #ddd;
+  margin: 10px;
+}
+
+.cell {
+  width: 100%;
+  height: 26px;
+  background-color: white;
+  background-color: #aaa;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.computer-grid div {
+  cursor: auto;
+}
+
+.hit {
+  background-color: #ff6347;
+}
+
+.miss {
+  background-color: #87ceeb;
+}
+
+.ship {
+  background-color: #556b2f;
+}
+
+@media screen and (min-width: 650px) {
+  .game-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
