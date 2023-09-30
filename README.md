@@ -2,6 +2,11 @@
 
 This repository contains a JavaScript implementation of the classic game Battleship. It serves as a personal practice project focused on Test Driven Development (TDD) principles.
 
+
+## Preview
+
+You can preview the project [here](https://laythalqadhi.github.io/battleship/).
+
 ## Project Structure
 
 ### `index.js`
